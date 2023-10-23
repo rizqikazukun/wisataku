@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WisataKu</title>
+<link rel="stylesheet" href="assets/style/index.css">
+
+<body>
+    <header>
+        <nav>
+            <div id="leftNav">
+                <img src="./assets/img/logo.svg" alt="logo">
+            </div>
+        </nav>
+
+        <div class="slider">
+            <div class="slider-item">
+                <img src="assets/img/wisata/candi-sukuh.jpg" alt="candi sukuh"/>
+                <div class="slider-caption">Candi Sukuh </div>
+            </div>
+            <div class="slider-item">
+                <img src="assets/img/wisata/grojogan-sewu.jpg" alt="Grojogan Sewu"/>
+                <div class="slider-caption">Grojogan Sewu </div>
+            </div>
+            <div class="slider-item">
+                <img src="assets/img/wisata/gunung-lawu.jpg" alt="Gunung Lawu"/>
+                <div class="slider-caption">Gunung Lawu </div>
+            </div>
+            <div class="slider-item">
+                <img src="assets/img/wisata/situs-manusia-purba.jpg" alt="Situs Manusia Purba Sangiran"/>
+                <div class="slider-caption">Situs Manusia Purba Sangiran </div>
+            </div>
+            <div id="slider-btn">
+                <button id="slider-btn-prev" onclick="Slider.prev()"><img src="./assets/img/prev.png" alt="prev" width="48px"></button>
+                <button id="slider-btn-next" onclick="Slider.next()"><img src="./assets/img/next.png" alt="next" width="48px"></button>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <script>
+
+        const Slider = {
+            indexSlider: 0,
+            slider: document.getElementsByClassName('slider-item'),
+            init: function () {
+                for (element of this.slider) {
+                    element.style.display= 'none'
+                }
+                if (this.indexSlider === 0) {
+                    this.slider[this.indexSlider].style.display= 'unset'
+                }
+                setInterval(() => this.next(), 4000)
+            },
+            next: function () {
+                this.slider[this.indexSlider].style.display= 'none'
+                if (this.indexSlider === this.slider.length - 1) {
+                    this.indexSlider = 0
+                } else {
+                    this.indexSlider++
+                }
+                this.slider[this.indexSlider].style.display= 'unset'
+            },
+            prev: function () {
+                this.slider[this.indexSlider].style.display= 'none'
+                if (this.indexSlider === 0) {
+                    this.indexSlider = this.slider.length - 1
+                } else {
+                    this.indexSlider--
+                }
+                this.slider[this.indexSlider].style.display= 'unset'
+            }
+        }
+
+        Slider.init()
+
+    </script>
+</body>
+
+</html>
