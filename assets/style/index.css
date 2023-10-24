@@ -1,23 +1,62 @@
-:root{
-    --container: 1200px; 
+:root {
+    --container: 1200px;
+}
+
+html {
+    scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 body {
     margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 /* Navbar */
 
 nav {
+    z-index: 10000;
+    margin: auto;
+    padding: 2rem 1rem 0.5rem 1rem;
+
     display: flex;
     direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto;
-    padding-top: 2rem;
-    padding-bottom: 0.5rem;
-    padding: 2rem 1rem 0.5rem 1rem;
-    max-width: var(--container);    
+
+    background-color: #fff;
+    max-width: var(--container);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+    border-bottom: yellowgreen solid;
+    border-left: yellowgreen solid;
+    border-right: yellowgreen solid;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
+
+nav button {
+    font-weight: 900;
+    color: white;
+    background-color: yellowgreen;
+    border: unset;
+    padding: 10px;
+    border-radius: 3px;
+    border: transparent solid;
+
+    margin: 2px;
+}
+nav button:hover {
+    color: green;
+    border: green solid;
+    
+}
+
 
 /* End of Navbar */
 
@@ -25,20 +64,19 @@ nav {
 
 
 .slider {
+    margin-top: 50px;
     margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 20px;
     max-width: var(--container);
-    border-width: 6px;
-    border-radius: 10px;
 }
 
 #slider-btn {
     display: flex;
     justify-content: space-between;
-    width: 100%;    
+    width: 100%;
     padding-left: 10px;
     margin-top: -200px;
 }
@@ -64,9 +102,10 @@ nav {
     height: 300px;
     object-fit: cover;
     object-position: center;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     border: yellowgreen solid;
-    border-width: 5px;
+    border-bottom: unset;
 }
 
 .slider-caption {
@@ -84,9 +123,140 @@ nav {
     border: yellowgreen solid;
     background-color: white;
     max-width: var(--container);
-    border-width: 5px;
-    border-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 /* End Of Header Content */
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    /* align-items: center; */
+
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+main #content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 800px;
+    padding: 24px;
+    margin-bottom: 10px;
+
+    border: yellowgreen solid;
+    border-radius: 10px;
+}
+
+main #content img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 300px;
+    height: fit-content;
+    padding: 15px;
+    margin-bottom: 10px;
+
+    border: yellowgreen solid;
+    border-radius: 10px;
+    text-align: justify;
+
+    position: sticky;
+    top: 95px;
+    z-index: 100 !important;
+}
+
+#aside-article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+#aside-article td {
+    padding-right: 20px;
+}
+
+/* End of main */
+
+/* footer */
+
+footer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+
+    border: yellowgreen solid;
+    border-bottom: unset;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    height: 75px;
+    max-width: var(--container);
+    z-index: 9999;
+
+    text-align: center;
+}
+
+footer a {
+    font-weight: 900;
+    text-decoration: none !important;
+    color: green;
+}
+/* end of footer */
+
+/* Mobile CSS */
+
+@media screen and (max-width: 1230px) {
+    nav {
+        padding-bottom: 10px;
+    }
+    
+    main #content {
+        width: var(--container);
+    }
+
+    aside {
+        width: var(--container);
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    aside #profile {
+        text-align: center;
+    }
+
+    aside #profile img {
+        height: 160px;
+    }
+
+    aside #profile-desc {
+        max-width: 280px;
+    }
+}
 

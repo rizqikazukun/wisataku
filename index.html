@@ -8,75 +8,245 @@
 <link rel="stylesheet" href="assets/style/index.css">
 
 <body>
+    <nav>
+        <div id="leftNav">
+            <img src="./assets/img/logo.svg" alt="logo" style="margin-bottom: 10px;">
+        </div>
+        <div>
+            <a href="#grojogan-sewu"><button>Grojogan Sewu</button></a>
+            <a href="#gunung-lawu"><button>Gunung lawu</button></a>
+            <a href="#candi-sukuh"><button>Candi Sukuh</button></a>
+            <a href="#situs-manusia-purba"><button>Situs Manusa Purba</button></a>
+        </div>
+    </nav>
     <header>
-        <nav>
-            <div id="leftNav">
-                <img src="./assets/img/logo.svg" alt="logo">
-            </div>
-        </nav>
-
+        <!-- Slider Header -->
         <div class="slider">
             <div class="slider-item">
-                <img src="assets/img/wisata/candi-sukuh.jpg" alt="candi sukuh"/>
-                <div class="slider-caption">Candi Sukuh </div>
+                <img src="assets/img/wisata/candi-sukuh.jpg" alt="candi sukuh" />
+                <div class="slider-caption">Candi Sukuh</div>
             </div>
             <div class="slider-item">
-                <img src="assets/img/wisata/grojogan-sewu.jpg" alt="Grojogan Sewu"/>
-                <div class="slider-caption">Grojogan Sewu </div>
+                <img src="assets/img/wisata/grojogan-sewu.jpg" alt="Grojogan Sewu" />
+                <div class="slider-caption">Grojogan Sewu</div>
             </div>
             <div class="slider-item">
-                <img src="assets/img/wisata/gunung-lawu.jpg" alt="Gunung Lawu"/>
+                <img src="assets/img/wisata/gunung-lawu.jpg" alt="Gunung Lawu" />
                 <div class="slider-caption">Gunung Lawu </div>
             </div>
             <div class="slider-item">
-                <img src="assets/img/wisata/situs-manusia-purba.jpg" alt="Situs Manusia Purba Sangiran"/>
+                <img src="assets/img/wisata/situs-manusia-purba.jpg" alt="Situs Manusia Purba Sangiran" />
                 <div class="slider-caption">Situs Manusia Purba Sangiran </div>
             </div>
             <div id="slider-btn">
-                <button id="slider-btn-prev" onclick="Slider.prev()"><img src="./assets/img/prev.png" alt="prev" width="48px"></button>
-                <button id="slider-btn-next" onclick="Slider.next()"><img src="./assets/img/next.png" alt="next" width="48px"></button>
+                <button id="slider-btn-prev" onclick="slideMe.prev()"><img src="./assets/img/prev.png" alt="prev"
+                        width="48px"></button>
+                <button id="slider-btn-next" onclick="slideMe.next()"><img src="./assets/img/next.png" alt="next"
+                        width="48px"></button>
             </div>
-
         </div>
+        <!-- End of Slider Header -->
     </header>
 
+    <main>
+        <div id="content">
+            <!-- Article -->
+            <h1>Karanganyar</h1>
+            <article id="grojogan-sewu" style="margin-bottom: 20px;">
+                <h2>Grojogan Sewu</h2>
+                <div style="display: flex; flex-wrap: wrap;">
+                    <figure style="text-align: center; margin: 0 auto; ">
+                        <img src="assets/img/wisata/grojogan-sewu.jpg" style="max-height: 300px; border-radius: 6px;" />
+                        <figcaption>Air Terjun Grojogan Sewu</figcaption>
+                    </figure>
+                    <div>
+                        <p style="text-align: justify;">
+                            Grojogan Sewu merupakan air terjun yang berada di Provinsi Jawa Tengah.Terletak di Kecamatan
+                            Tawangmangu, Kabupaten Karanganyar, Jawa Tengah. Air terjun Grojogan Sewu terletak di lereng
+                            Gunung
+                            Lawu. Grojogan Sewu terletak sekitar 27 km di sebelah timur Kota Karanganyar. Air terjun
+                            Grojogan
+                            Sewu
+                            merupakan bagian dari Hutan Wisata Grojogan Sewu.
+                        </p>
+                        <p style="text-align: justify;">
+                            Grojogan dalam bahasa Jawa berarti air terjun dan sèwu berarti seribu. Sehingga Grojogan
+                            Sèwu berarti
+                            air terjun seribu. Meski air terjun di sini tidak berjumlah seribu, tetapi ada beberapa
+                            titik air
+                            terjun
+                            yang dapat dinikmati di sini. Kata sewu atau seribu disini berasal dari seribu pecak, atau
+                            satuan
+                            jarak
+                            yang digunakan saat itu yang merupakan tinggi air terjun.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article id="gunung-lawu" style="margin-bottom: 20px;">
+                <h2>Gunung Lawu</h2>
+                <div style="display: flex; flex-wrap: wrap;">
+                    <figure style="text-align: center; margin: 0 auto; ">
+                        <img src="assets/img/wisata/gunung-lawu.jpg" style="max-height: 300px; border-radius: 6px;" />
+                        <figcaption>Gunung Lawu</figcaption>
+                    </figure>
+                    <div>
+                        <p style="text-align: justify;">
+                            Gunung Lawu adalah sebuah gunung berapi aktif yang terletak di Pulau Jawa, tepatnya di
+                            perbatasan Jawa Tengah dan Jawa Timur, Indonesia. Gunung Lawu memiliki ketinggian sekitar
+                            3.265 mdpl. Gunung Lawu terletak di antara tiga kabupaten, yaitu Karanganyar di Jawa Tengah,
+                            Ngawi, dan Magetan di Jawa Timur. Status gunung ini adalah gunung api "istirahat", yang
+                            diperkirakan terakhir meletus pada tanggal 28 November 1885 dan telah lama tidak
+                            aktif, terlihat dari rapatnya vegetasi serta puncaknya yang tererosi. Studi pada 2019
+                            tentang geothermal heat flow menyugestikan bahwa Gunung Lawu masih aktif sampai sekarang.
+                            Pada tahun 1978, serangkaian gempa bumi dilaporkan dirasakan diarea sekitar Gunung Lawu dan
+                            diikuti oleh suara mirip dentuman dari arah gunung. Gunung Lawu merupakan salah satu
+                            gunung terdingin di Jawa, setelah Gunung Semeru, dan Gunung Slamet yang merupakan titik
+                            terdingin di Jawa.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article id="candi-sukuh" style="margin-bottom: 20px;">
+                <h2>Candi Sukuh</h2>
+                <div style="display: flex; flex-wrap: wrap;">
+                    <figure style="text-align: center; margin: 0 auto; ">
+                        <img src="assets/img/wisata/candi-sukuh.jpg" style="max-height: 300px; border-radius: 6px;" />
+                        <figcaption>Candi Sukuh</figcaption>
+                    </figure>
+                    <div>
+                        <p style="text-align: justify;">
+                            Situs candi Sukuh dilaporkan pertama kali pada masa pemerintahan Britania Raya di tanah Jawa
+                            pada tahun 1815 oleh Johnson, Residen Surakarta. Johnson kala itu ditugasi oleh Thomas
+                            Stanford Raffles untuk mengumpulkan data-data guna menulis bukunya The History of Java.
+                            Setelah masa pemerintahan Britania Raya berlalu, pada tahun 1842, Van der Vlis, arkeolog
+                            Belanda, melakukan penelitian. Pemugaran pertama dimulai pada tahun 1928.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article id="situs-manusia-purba" style="margin-bottom: 20px;">
+                <h2>Situs Manusia Purba Sangiran</h2>
+                <div style="display: flex; flex-wrap: wrap;">
+                    <figure style="text-align: center; margin: 0 auto; ">
+                        <img src="assets/img/wisata/situs-manusia-purba.jpg"
+                            style="max-height: 300px; border-radius: 6px;" />
+                        <figcaption>Situs Manusia Purba Sangiran</figcaption>
+                    </figure>
+                    <div>
+                        <p style="text-align: justify;">
+                            Situs Sangiran adalah salah satu situs manusia purba yang ada di Indonesia. Situs Sangiran
+                            terletak di dua wilayah kabupaten yang ada di Provinsi Jawa Tengah, yaitu Kabupaten Sragen
+                            dan Kabupaten Karanganyar, dengan luas 59,21 kilometer persegi. Situs ini dikelola Balai
+                            Pelestarian Situs Manusia Purba (BPSMP) Sangiran, salah satu unit pelaksana teknis (UPT)
+                            Kementerian Pendidikan dan Kebudayaan (Kemendikbud).
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!-- End of Article -->
+        </div>
 
+        <aside>
+            <div>
+                <section id="profile" style="text-align: center;">
+                    <h3>Kabupaten Karanganyar</h3>
+                    <figure>
+                        <img width="200px" src="assets/img/lambang_karanganyar.svg" />
+                    </figure>
+                    <figcaption>Lambang</figcaption>
+                </section>
+            </div>
+            <div>
+                <section id="profile-desc">
+                    <h3>Deskripsi</h3>
+                    <p>
+                        Kabupaten Karanganyar merupakan salah satu kabupaten di Propinsi Jawa Tengah yang memiliki
+                        bentang alam, kondisi astronomis, geografis dan demografis yang unik. Bagian barat Kabupaten
+                        Karanganyar
+                        merupakan dataran rendah, yakni lembah Bengawan Solo yang mengalir menuju ke utara. Bagian timur
+                        berupa pegunungan, yakni bagian sistem dari Gunung Lawu. Sebagian besar daerah pegunungan ini
+                        masih tertutup hutan.
+                    </p>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h3>Informasi Lainnya</h3>
+
+                    <table>
+                        <tr>
+                            <th>Negara</th>
+                            <td>Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Hari jadi</th>
+                            <td>18 November 1917</td>
+                        </tr>
+                        <tr>
+                            <th>Luas Total</th>
+                            <td>773,79 km2</td>
+                        </tr>
+                        <tr>
+                            <th>Bahasa Daerah</th>
+                            <td>Jawa</td>
+                        </tr>
+                        <tr>
+                            <th>Kode Telepon</th>
+                            <td>+62 271</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
+                rel="cc:attributionURL" href="#">WisataKu</a> by <a rel="cc:attributionURL dct:creator"
+                property="cc:attributionName" href="https://github.com/rizqikazukun">Rizqi Pratama</a> is licensed under
+            <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+    </footer>
 
     <script>
 
-        const Slider = {
-            indexSlider: 0,
-            slider: document.getElementsByClassName('slider-item'),
-            init: function () {
-                for (element of this.slider) {
-                    element.style.display= 'none'
+        class Slider {
+            constructor({ className, interval }) {
+                this.indexSlider = 0
+                this.interval = interval || 3000
+                this.classSelector = className
+                this.slider = document.getElementsByClassName(this.classSelector)
+            }
+
+            init() {
+                for (const element of this.slider) {
+                    element.style.display = 'none'
                 }
-                if (this.indexSlider === 0) {
-                    this.slider[this.indexSlider].style.display= 'unset'
-                }
-                setInterval(() => this.next(), 4000)
-            },
-            next: function () {
-                this.slider[this.indexSlider].style.display= 'none'
-                if (this.indexSlider === this.slider.length - 1) {
-                    this.indexSlider = 0
-                } else {
-                    this.indexSlider++
-                }
-                this.slider[this.indexSlider].style.display= 'unset'
-            },
-            prev: function () {
-                this.slider[this.indexSlider].style.display= 'none'
-                if (this.indexSlider === 0) {
-                    this.indexSlider = this.slider.length - 1
-                } else {
-                    this.indexSlider--
-                }
-                this.slider[this.indexSlider].style.display= 'unset'
+                this.indexSlider === 0 ?
+                    this.slider[this.indexSlider].style.display = 'unset' : ''
+                setInterval(() => this.next(), this.interval)
+            }
+
+            next() {
+                this.slider[this.indexSlider].style.display = 'none'
+                this.indexSlider === this.slider.length - 1 ? this.indexSlider = 0 : this.indexSlider++
+                this.slider[this.indexSlider].style.display = 'unset'
+            }
+
+            prev() {
+                this.slider[this.indexSlider].style.display = 'none'
+                this.indexSlider === 0 ? this.indexSlider = this.slider.length - 1 : this.indexSlider--
+                this.slider[this.indexSlider].style.display = 'unset'
             }
         }
 
-        Slider.init()
+        const slideMe = new Slider({ className: 'slider-item' })
+        slideMe.init()
 
     </script>
 </body>
