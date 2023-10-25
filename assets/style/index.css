@@ -28,9 +28,9 @@ nav {
 
     background-color: #fff;
     max-width: var(--container);
-    position: -webkit-sticky; /* Safari */
+    /* position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 0; */
 
     border-bottom: yellowgreen solid;
     border-left: yellowgreen solid;
@@ -179,7 +179,7 @@ aside {
     text-align: justify;
 
     position: sticky;
-    top: 95px;
+    top: 3px;
     z-index: 100 !important;
 }
 
